@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smartshoppers.Controller">
+   <children>
+      <Label layoutX="219.0" layoutY="90.0" text="SmartShoppers">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="142.0" text="Username:" />
+      <Label layoutX="191.0" layoutY="167.0" text="Password:" />
+      <TextField fx:id="user" layoutX="260.0" layoutY="138.0" />
+      <TextField fx:id="pass" layoutX="260.0" layoutY="163.0" />
+      <Button layoutX="193.0" layoutY="200.0" mnemonicParsing="false" onAction="#loginButton" text="Login" />
+      <Button layoutX="289.0" layoutY="200.0" mnemonicParsing="false" onAction="#signUpButton" text="Sign up" />
+   </children>
+</AnchorPane>

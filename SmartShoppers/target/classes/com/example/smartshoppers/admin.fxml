@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smartshoppers.AdminController">
+   <children>
+      <Label layoutX="410.0" layoutY="15.0" text="Admin View">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ChoiceBox fx:id="storeChoice" layoutX="22.0" layoutY="54.0" onAction="#choiceBoxListener" prefWidth="150.0" />
+      <TableView fx:id="itemTable" layoutX="22.0" layoutY="111.0" prefHeight="115.0" prefWidth="539.0" />
+      <ListView fx:id="managerList" layoutX="22.0" layoutY="260.0" prefHeight="126.0" prefWidth="150.0" />
+      <Button layoutX="192.0" layoutY="54.0" mnemonicParsing="false" onAction="#addStoreButton" text="Add Store" />
+      <Button layoutX="271.0" layoutY="54.0" mnemonicParsing="false" onAction="#removeStoreButton" text="Remove Store" />
+      <Button layoutX="192.0" layoutY="260.0" mnemonicParsing="false" onAction="#addManagerButton" text="Add Manager" />
+      <Button layoutX="192.0" layoutY="298.0" mnemonicParsing="false" onAction="#removeManagerButton" text="Remove Manager" />
+      <Button layoutX="480.0" layoutY="232.0" mnemonicParsing="false" onAction="#modifyItemButton" text="Modify Item" />
+      <Label layoutX="22.0" layoutY="236.0" text="Managers:" />
+      <Label layoutX="22.0" layoutY="88.0" text="Items:" />
+      <Label layoutX="22.0" layoutY="28.0" text="Choose Store:" />
+      <Button layoutX="399.0" layoutY="232.0" mnemonicParsing="false" onAction="#addItemButton" text="Add Item" />
+      <Button layoutX="521.0" layoutY="16.0" mnemonicParsing="false" onAction="#logoutButton" text="Logout" />
+      <Label fx:id="adminLabel" layoutX="410.0" layoutY="46.0" text="Label" />
+   </children>
+</AnchorPane>

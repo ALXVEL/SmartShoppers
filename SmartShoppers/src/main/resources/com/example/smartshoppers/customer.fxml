@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smartshoppers.CustomerController">
+   <children>
+      <Button layoutX="532.0" layoutY="16.0" mnemonicParsing="false" onAction="#logoutButton" text="Logout" />
+      <Label layoutX="16.0" layoutY="15.0" text="Customer View">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerLabel" layoutX="150.0" layoutY="20.0" text="Label" />
+      <TableView fx:id="customerTable" layoutX="16.0" layoutY="104.0" prefHeight="223.0" prefWidth="295.0" />
+      <CheckBox fx:id="onSale" layoutX="16.0" layoutY="78.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="67.0" text="on Sale" />
+      <CheckBox fx:id="nearMe" layoutX="89.0" layoutY="78.0" mnemonicParsing="false" onAction="#checkBoxListener" prefHeight="17.0" prefWidth="77.0" text="Near Me" />
+      <TextField fx:id="kmText" layoutX="166.0" layoutY="74.0" prefHeight="25.0" prefWidth="54.0" />
+      <Button layoutX="400.0" layoutY="342.0" mnemonicParsing="false" onAction="#saveLocation" text="Save Location" />
+      <Button layoutX="12.0" layoutY="342.0" mnemonicParsing="false" onAction="#addToShoppingList" text="Add to Shopping List" />
+      <ListView fx:id="savedLocation" layoutX="327.0" layoutY="223.0" prefHeight="104.0" prefWidth="261.0" />
+      <Label layoutX="327.0" layoutY="49.0" text="Shopping List" />
+      <Label layoutX="327.0" layoutY="207.0" text="Saved Locations" />
+      <Button layoutX="516.0" layoutY="342.0" mnemonicParsing="false" onAction="#removeLocation" text="Remove" />
+      <TableView fx:id="shoppingList" layoutX="327.0" layoutY="66.0" prefHeight="138.0" prefWidth="261.0" />
+      <Button layoutX="150.0" layoutY="342.0" mnemonicParsing="false" onAction="#removeFromShoppingList" text="Remove from Shopping List" />
+      <Button layoutX="248.0" layoutY="74.0" mnemonicParsing="false" onAction="#refreshButton" text="Refresh" />
+   </children>
+</AnchorPane>
